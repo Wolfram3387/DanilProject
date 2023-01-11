@@ -1,3 +1,4 @@
+from time import sleep
 from openpyxl import load_workbook
 import requests
 from openpyxl.drawing.image import Image
@@ -22,3 +23,4 @@ for i in range(2, 89+1):
 
     # сохраняем
     excel_file.save('output.xlsx')
+    sleep(1)
